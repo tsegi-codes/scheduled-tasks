@@ -24,7 +24,7 @@ today_month = today.month
 birthday_matches = data[(data["day"] == today_day) & (data["month"] == today.month)]
 
 if not birthday_matches.empty:
-    letter_num = random.randint(1,3)
+    letter_num = random.randint(1,4)
     with open(f"letter_templates/letter_{letter_num}.txt") as f:
         available_letters = f.read()
 
